@@ -1,8 +1,13 @@
-/* CSS Document */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Source Sans Pro", sans-serif;
 	background-color: #f2f2f2;
 	text-align: center;
+}
+a:hover {
+	text-decoration: none;
 }
 #navbar {
 	position: fixed;
@@ -11,16 +16,18 @@ body {
 	z-index: 1;
 	opacity: 0.5;
 	transition: opacity 0.2s ease-out;
+	background-color: #ffead0;
+	border-bottom: 1px solid orange;
 }
 #welcome-section {
-	background-color: orange;
-	padding-top: 40vh;
+	background-color: #fd7e14;
+	padding: 40vh 5% 0 5%;
 	width: 100%;
 	height: 100vh;
 }
 #footer {
-	background-color: orangered;
-	margin: 2% 0 1% 0;
+	background-color: #ff2400;
+	margin: 1% 0;
 	padding: 1%;
 }
 #main {
@@ -29,19 +36,25 @@ body {
 	padding-bottom: 20px;
 	margin: 0 50px;
 }
+#footer a {
+	text-shadow: 1px 1px 1px #2d1408;
+}
 .social-icons svg {
-	width: 1em;
 	height: 1em;
 	margin: 0.5%;
 }
+.social-icons #freeCodeCamp_logo {
+	height: 1.2em;
+	margin: 0.2%;
+}
 .orange-bar {
-	background-color: darkorange;
+	background-color: #ff4700;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 1em;
 }
-.orange-bg {
-	background-color: orange;
+.orange-bar a {
+	text-shadow: 1.5px 1.5px 1.5px #2d1408;
 }
 .project-tile {
 	display: inline-flex;
